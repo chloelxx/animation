@@ -4,3 +4,6 @@ dev 分支
 3、在dev分支下面提交你要提交的文件 先 git add XXXX -》git commit -m "XXX" -》git push --set-upstream origin dev
 4、首先切换到master 分支下面 git checkout master
 5、把dev分支合并到master分支下  git merge dev
+6、回退版本  git reset --hard HEAD^ (HEAD^表示回退到上一版本，HEAD^^表示回退到上上个版本.....，也可以简写"HEAD~100"回退到100个版本之前)
+7、查看多少个版本  git reflog
+8、回退版本重新回到之前某个新的版本  git push 哈希值 （这里的哈希值是6位16进制的字符串，是reflog查看出来的）
