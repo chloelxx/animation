@@ -1,6 +1,6 @@
 dev 分支
 1、首先切换分支 命令 git checkout -b dev
 2、删除当前目录下的所有文件  命令  rm * (但是这个命令不会删除.git和.idea文件)
-3、在dev分支下面提交你要提交的文件 先 git add XXXX -》git commit -m "XXX" -》git pull -》git push
+3、在dev分支下面提交你要提交的文件 先 git add XXXX -》git commit -m "XXX" -》git push --set-upstream origin dev
 4、首先切换到master 分支下面 git checkout master
 5、把dev分支合并到master分支下  git merge dev
